@@ -1,4 +1,4 @@
-# 1: (Problem 1.7.1) Python Comprehensions: Filtering
+## 1: (Problem 1.7.1) Python Comprehensions: Filtering
 def my_filter(L, num):
     """
     Input:
@@ -15,7 +15,12 @@ def my_filter(L, num):
     pass
 
 
-# 2: (Problem 1.7.2) Python Comprehensions: Lists of Lists
+x = my_filter([10, 15, 20, 25], 10)
+print(x)
+
+## 2: (Problem 1.7.2) Python Comprehensions: Lists of Lists
+
+
 def my_lists(L):
     """
     >>> my_lists([1,2,4])
@@ -23,7 +28,6 @@ def my_lists(L):
     >>> my_lists([0,3])
     [[], [1, 2, 3]]
     """
-
     result = []
     for num in L:
         if num == 0:
@@ -156,10 +160,6 @@ def my_union(L):
             current.add(member)
     return current
 
-
-l = [set()]
-x = my_union(l)
-print(x)
 
 ## 9: (Problem 1.7.10) Complex Addition Practice
 # Each answer should be a Python expression whose value is a complex number.
